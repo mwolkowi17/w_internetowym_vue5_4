@@ -32,9 +32,9 @@ const textToDisplay4 = ". Powodzenia!"
 </script>
 <template>
   <div class="tlo1" aria-label="Zasady gry">
-    <div class="info-instrukcja" tabindex="0">
-      <h1 class="instrukcja-title">Zasady gry</h1>
-      <div class="kontener-instrukcja">
+    <div class="info-instrukcja" tabindex="0" >
+      <h1 class="instrukcja-title" >Zasady gry</h1>
+      <div class="kontener-instrukcja" aria-label="Instrukcja gry lorem ipsus...">
         <span class="instrukcja" v-html="textToDisplay"></span>
         <img class="gwiazdka" alt="" src="../assets/ikona1gwiazdka.png" />
         <span class="instrukcja" v-html="textToDisplay2"></span>

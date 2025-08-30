@@ -194,7 +194,7 @@ const pytanieToDisplay = (miejsce) => {
     role="img" alt="tło" aria-label="pytanie">
     <h1 class="sr-only">Quizz</h1>
   </div>
-  <p class="pytanie1" ref="pytanie1" v-html="pytanieToDisplay(props.miejsceNaPlanszy)" tabindex="0"></p>
+  <p class="pytanie1" ref="pytanie1" v-html="pytanieToDisplay(props.miejsceNaPlanszy)" tabindex="0"  :aria-label="quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).tresc"></p>
 
   <!-- <ul class="lista-odpowiedzi" role="presentation"> -->
   <ul class="lista-odpowiedzi" role="list">
@@ -237,7 +237,7 @@ const pytanieToDisplay = (miejsce) => {
     @keydown.enter="ifButtonKoniecQuizzuOnFocus = true; sprawdzOdpowiedz()" role="button" alt="przycisk sprawdź">Sprawdź
     odpowiedź</button>
   <div class="plansza-dobrze" v-if="if_odpowiedz_dobrze">
-    <div class="info" ref="info" tabindex="0">
+    <div class="info" ref="info" tabindex="0" aria-label="Brawo! Prawidłowa odpowiedź.">
       <p class="naglowek-after-quizz naglowek-dobrze">Brawo!</p>
       <p class="napis-odpowiedz napis-dobrze">Prawidłowa odpowiedź.</p>
     </div>
@@ -250,7 +250,7 @@ const pytanieToDisplay = (miejsce) => {
       if_button_dalej_dobrze = false
       " role="button">Dalej</button>
   <div class="plansza-zle" v-if="if_odpowiedz_zle">
-    <div class="info" ref="info" tabindex="0">
+    <div class="info" ref="info" tabindex="0" aria-label="Źle! Błędna odpowiedź.">
       <p class="naglowek-after-quizz naglowek-zle">Źle!</p>
       <p class="napis-odpowiedz napis-zle">Błędna odpowiedź.</p>
     </div>
