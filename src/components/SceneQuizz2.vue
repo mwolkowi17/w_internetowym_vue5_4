@@ -199,7 +199,7 @@ function zaznaczenie3() {
     </div>
 
     <!-- <div class="planszaQuizz1 " :class="eksp1[9]"></div> -->
-    <p class="pytanie1" ref="pytanie1" tabindex="0">{{ quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).tresc }}</p>
+    <p class="pytanie1" ref="pytanie1" tabindex="0" :aria-label="quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).tresc">{{ quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).tresc }}</p>
     <ul class="lista-odpowiedzi" role="list">
         <li>
             <div class="pojedyncza-odpowiedz" role="checkbox" tabindex="0" :aria-checked="zaznaczenieOdpowiedzi1"

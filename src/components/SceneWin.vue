@@ -27,7 +27,7 @@ fanfary.play();
 
 <template>
     <div class="plansza-win">
-        <div class="info-win2" ref="info-win2" tabindex="0">
+        <div class="info-win2" ref="info-win2" tabindex="0" aria-level="Gratulacje! Udało ci się ukonczyć grę.">
             <h1 class="naglowek">Gratulacje!</h1>
             <h2 class="napis">Udało Ci się ukończyć grę.</h2>
         </div>

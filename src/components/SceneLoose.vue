@@ -1,12 +1,12 @@
 <script setup>
 import { ref, onMounted, useTemplateRef } from 'vue';
-defineEmits(['jeszcze-raz','jeszcze-raz-focus', 'koniec-gry']);
+defineEmits(['jeszcze-raz', 'jeszcze-raz-focus', 'koniec-gry']);
 
 const props = defineProps({
- ifButtonOnFocusSceneLose: Boolean
+    ifButtonOnFocusSceneLose: Boolean
 });
 
-const infoEnd=useTemplateRef('info-end2')
+const infoEnd = useTemplateRef('info-end2')
 
 onMounted(() => {
     // const elementToFocus = document.querySelector(".info-end2")
@@ -22,12 +22,13 @@ przegrana_sound.play();
 
 <template>
     <div class="plansza-lose">
-        <div class="info-end2" ref="info-end2" tabindex="0">
-        <h2 class="naglowek">Niestety przegrałeś.</h2>
-        <h2 class="napis">Chcesz spróbować jeszcze raz?</h2>
+        <div class="info-end2" ref="info-end2" tabindex="0" aria-label="Niestety przegrałeś. Chcesz spróbować jeszcze raz?">
+            <h2 class="naglowek">Niestety przegrałeś.</h2>
+            <h2 class="napis">Chcesz spróbować jeszcze raz?</h2>
         </div>
     </div>
-    <button class="gram-jeszcze-1 my-button anim1" @click="$emit('jeszcze-raz')" @keydown.enter="$emit('jeszcze-raz-focus')" role="button">Zagraj jeszcze raz</button>
+    <button class="gram-jeszcze-1 my-button anim1" @click="$emit('jeszcze-raz')"
+        @keydown.enter="$emit('jeszcze-raz-focus')" role="button">Zagraj jeszcze raz</button>
     <button class="zakoncz-gre my-button anim1" @click="$emit('koniec-gry')" role="button">Zakończ grę</button>
 </template>
 
@@ -43,15 +44,15 @@ przegrana_sound.play();
     z-index: 2;
 }
 
-.info-end2{
+.info-end2 {
     position: absolute;
     height: 400px;
     width: 1200px;
     top: 200px;
-    left:350px
+    left: 350px
 }
 
-.info-end2:focus{
+.info-end2:focus {
     outline: 2px solid #ffffff;
 }
 

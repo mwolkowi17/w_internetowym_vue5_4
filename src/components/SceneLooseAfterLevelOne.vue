@@ -22,7 +22,7 @@ przegrana_sound.play();
 
 <template>
     <div class="plansza-lose">
-         <div class="info-end1" ref="info-end1" tabindex="0">
+         <div class="info-end1" ref="info-end1" tabindex="0" aria-label="Niestety przegrałeś. Chcesz spróbować jeszcze raz?">
         <h2 class="naglowek">Niestety przegrałeś.</h2>
         <h2 class="napis">Chcesz spróbować jeszcze raz?</h2>
         </div>
