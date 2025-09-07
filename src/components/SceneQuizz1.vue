@@ -194,7 +194,7 @@ const pytanieToDisplay = (miejsce) => {
     role="img" alt="tło" aria-label="pytanie">
     <h1 class="sr-only">Quizz</h1>
   </div>
-  <p class="pytanie1" ref="pytanie1" v-html="pytanieToDisplay(props.miejsceNaPlanszy)" tabindex="0"  :aria-label="quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).tresc"></p>
+  <p class="pytanie1" ref="pytanie1" v-html="pytanieToDisplay(props.miejsceNaPlanszy)" tabindex="0"  :aria-label="quizz_assets_data.pokaz_zadanie_2(props.miejsceNaPlanszy).trescAria"></p>
 
   <!-- <ul class="lista-odpowiedzi" role="presentation"> -->
   <ul class="lista-odpowiedzi" role="list">

@@ -29,12 +29,23 @@ const textToDisplay3 = "czeka Cię pytanie." + " Każda błędna odpowiedź - to
   " wykrzyknikiem &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
 
 const textToDisplay4 = ". Powodzenia!"
+
+const textToDisplayCzytnik= "Znajdujesz się w Wirtualnej Dżungli - aby ją przejść, musisz odpowiedzieć " +
+  " prawidłowo na pytania dotyczące internetu. Gra składa się z dwóch" +
+  " poziomów. Rzucasz kostką i posuwasz się do przodu o tyle pól, ile oczek" +
+  " wyrzuciła kostka. Na początku gry otrzymujesz trzy szanse"+
+  "Na polach oznaczonych znakiem zapytania"+
+  "czeka Cię pytanie."+ " Każda błędna odpowiedź - to strata 1 szansy. Utrata wszystkich szans" +
+  " oznacza zakończenie gry. Dobra odpowiedź - to kolejny rzut kostką." +
+  " Po drodze czekają Cię zasadzki, kryjące się na polach oznaczonych" +
+  " wykrzyknikiem. Powodzenia"
+
 </script>
 <template>
   <div class="tlo1" aria-label="Zasady gry">
-    <div class="info-instrukcja" tabindex="0" >
+    <div class="info-instrukcja" tabindex="0" :aria-label="textToDisplayCzytnik">
       <h1 class="instrukcja-title" >Zasady gry</h1>
-      <div class="kontener-instrukcja" aria-label="Instrukcja gry lorem ipsus...">
+      <div class="kontener-instrukcja" >
         <span class="instrukcja" v-html="textToDisplay"></span>
         <img class="gwiazdka" alt="" src="../assets/ikona1gwiazdka.png" />
         <span class="instrukcja" v-html="textToDisplay2"></span>

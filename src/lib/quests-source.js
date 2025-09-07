@@ -23,6 +23,7 @@ export class Quests {
         ],
         odpowiedz: 1,
         tresc: "Symbol kłódki",
+        trescAria: "Symbol kłódki oznacza połączenie:",
       },
       {
         id: 2,
@@ -33,6 +34,7 @@ export class Quests {
         ],
         odpowiedz: 1,
         tresc: "Internetem można przesyłać:",
+        trescAria: "Internetem można przesyłać:",
       },
       {
         id: 4,
@@ -43,6 +45,7 @@ export class Quests {
         ],
         odpowiedz: 1,
         tresc: "Bezpieczne połączenie Wi-Fi to sieć:",
+        trescAria: "Bezpieczne połączenie Wi-Fi to sieć:",
       },
       {
         id: 5,
@@ -61,6 +64,7 @@ export class Quests {
         ],
         odpowiedz: 1,
         tresc: "Login ustala się:",
+        trescAria: "Login ustala się:",
       },
       {
         id: 7,
@@ -71,6 +75,7 @@ export class Quests {
         ],
         odpowiedz: 1,
         tresc: "Emotka uśmiechniętej buźki",
+        trescAria: "Emotka uśmiechniętej buźki wyraża:",
       },
       {
         id: 9,
@@ -81,6 +86,7 @@ export class Quests {
         ],
         odpowiedz: 1,
         tresc: "Hasło:",
+        trescAria: "Hasło:",
       },
       {
         id: 10,
@@ -91,6 +97,7 @@ export class Quests {
         ],
         odpowiedz: 1,
         tresc: "Symbolu małpy",
+        trescAria: "Symbolu małpy używa się w adresie:",
       },
       {
         id: 12,
@@ -101,6 +108,7 @@ export class Quests {
         ],
         odpowiedz: 1,
         tresc: "W Polsce symbol",
+        trescAria: "W Polsce symbol małpy ozancza:",
       },
       {
         id: 13,
@@ -111,6 +119,7 @@ export class Quests {
         ],
         odpowiedz: 1,
         tresc: "Sieć Wi-Fi łączy bezprzewodowo:",
+        trescAria: "Sieć Wi-Fi łączy bezprzewodowo:",
       },
       {
         id: 15,
@@ -121,6 +130,7 @@ export class Quests {
         ],
         odpowiedz: 2,
         tresc: "Swój login i hasło:",
+        trescAria: "Swój login i hasło:",
       },
     ];
   }
