@@ -1,14 +1,14 @@
 <script setup>
-import { ref, onMounted,useTemplateRef, nextTick } from 'vue';
+import { ref, onMounted, useTemplateRef, nextTick } from 'vue';
 
-defineEmits(['koniec-pulapka','koniec-pulapka-focus']);
+defineEmits(['koniec-pulapka', 'koniec-pulapka-focus']);
 
 defineOptions({
   inheritAttrs: false
 })
 
 const props = defineProps({
-    ifButtonOnFocusTrap: Boolean
+  ifButtonOnFocusTrap: Boolean
 })
 
 const trapWidok = useTemplateRef('info-trap')
@@ -18,7 +18,7 @@ onMounted(() => {
   // if (elementToFocus&&props.ifButtonOnFocusTrap===true) {
   //   elementToFocus.focus();
   // }
-  if(props.ifButtonOnFocusTrap===true){
+  if (props.ifButtonOnFocusTrap === true) {
     trapWidok.value.focus()
   }
 
@@ -35,12 +35,13 @@ function koniecPulapki() {
 </script>
 <template>
   <div class="pulapka1">
-     <div class="info-trap" ref="info-trap" tabindex="0">
-    <h2 class="naglowek">Zasadzka!</h2>
-    <h3 class="napis">Cofasz się o dwa pola.</h3>
+    <div class="info-trap" ref="info-trap" tabindex="0" aria-label="Zasadzka! Cofasz się o dwa pola.">
+      <h2 class="naglowek">Zasadzka!</h2>
+      <h3 class="napis">Cofasz się o dwa pola.</h3>
     </div>
   </div>
-  <button class="przycisk_pulapka1 my-button anim1" @click="$emit('koniec-pulapka'); koniecPulapki()" @keydown.enter="$emit('koniec-pulapka-focus')" role="button">Dalej</button>
+  <button class="przycisk_pulapka1 my-button anim1" @click="$emit('koniec-pulapka'); koniecPulapki()"
+    @keydown.enter="$emit('koniec-pulapka-focus')" role="button">Dalej</button>
 </template>
 <style scoped>
 .pulapka1 {
@@ -54,7 +55,7 @@ function koniecPulapki() {
   top: 250px;
 }
 
-.info-trap{
+.info-trap {
   height: 256px;
   width: 812px;
   position: absolute;
@@ -62,7 +63,7 @@ function koniecPulapki() {
   top: 50px;
 }
 
-.info-trap:focus{
+.info-trap:focus {
   outline: 2px solid #ffffff !important;
 }
 
@@ -73,7 +74,8 @@ function koniecPulapki() {
   font-weight: 600;
   font-family: "Proxima Nova", sans-serif;
   top: -70px;
-  left: 150px;;
+  left: 150px;
+  ;
   height: 88px;
   width: 333px;
   position: absolute;
@@ -88,7 +90,8 @@ function koniecPulapki() {
   font-weight: 400;
   font-family: "Proxima Nova", sans-serif;
   white-space: nowrap;
-  top: 80px;;
+  top: 80px;
+  ;
   left: 60px;
   height: 88px;
   width: 333px;
